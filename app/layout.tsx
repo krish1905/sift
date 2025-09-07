@@ -21,9 +21,8 @@ const instrumentSerif = Instrument_Serif({
 })
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
-  generator: "v0.app",
+  title: "Sift - AI-powered Data Cleaning",
+  description: "Clean and curate your data with AI-powered intelligence",
 }
 
 export default function RootLayout({
@@ -32,18 +31,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <style>{`
-html {
-  font-family: ${figtree.style.fontFamily};
-  --font-sans: ${figtree.variable};
-  --font-mono: ${GeistMono.variable};
-  --font-instrument-serif: ${instrumentSerif.variable};
-}
-        `}</style>
-      </head>
-      <body className={`${figtree.variable} ${instrumentSerif.variable}`}>{children}</body>
+    <html lang="en" className={`${figtree.variable} ${instrumentSerif.variable} ${GeistMono.variable}`}>
+      <body className={`${figtree.className} font-sans`}>{children}</body>
     </html>
   )
 }

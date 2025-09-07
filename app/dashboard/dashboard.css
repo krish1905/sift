@@ -1,0 +1,93 @@
+/* Dashboard specific styles - pure black and white theme */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Remove all gradients and ensure black background */
+.dashboard-container {
+  background: #000000;
+  color: #ffffff;
+}
+
+/* Card styles - no gradients, just borders */
+.card {
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Button styles - clean black and white */
+.btn-primary {
+  background: #ffffff;
+  color: #000000;
+}
+
+.btn-primary:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Input styles */
+input, textarea, select {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+input:focus, textarea:focus, select:focus {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+/* Remove any remaining gradients */
+[class*="gradient"],
+[class*="bg-gradient"] {
+  background: transparent !important;
+}
+
+/* Ensure all text is properly styled */
+.text-muted {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.text-dim {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Chart colors - monochrome */
+.chart-line {
+  stroke: rgba(255, 255, 255, 0.2);
+}
+
+.chart-area {
+  fill: rgba(255, 255, 255, 0.05);
+}
