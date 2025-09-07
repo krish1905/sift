@@ -1,0 +1,22 @@
+# Ignore all files in the .next directory
+.next/
+
+# Ignore all files in the .env directory
+.env/
+
+# Ignore all files in the .env.local directory
+.env.local/
+
+# Ignore all files in the .env.development.local directory
+.env.development.local/ 
+
+node_modules/
+.cursor/
+.claude/
+.vscode/
+.idea/
+.v0/
+.v0.app/
+.v0.app.com/
+.v0.app.com.com/
+.v0.app.com.com.com/
